@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: url(./images/music-dark.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: rgb(71, 71, 71);
+  }
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#header.col{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100px;
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: rgb(98, 112, 126);
+        border-bottom: 1px solid rgb(255, 255, 255);
+        }
+        #header.col input{
+            margin-left: 5px;
+        }
+
+#header.exp{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+#header p{
+    margin-right: 20px; 
+}
+a{
+    margin-right: 80px;
+}
+
+#rest-of-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+#rest-of-header h1 {
+    text-shadow: rgb(116, 115, 115) 3px 3px 3px;
+}
+
+#rest-of-header a {
+   margin-left: 55px;
+}
+
+#rest-of-header img {
+    border: 1px solid whitesmoke;
+}
+
+#rest-of-header p {
+    padding-bottom: 10px;
+}
+
+#header button {
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #494949;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(231, 233, 133);
+}
+
+#header button:hover {
+    cursor: pointer;
+    background: rgb(250, 250, 47);
+    border: none;
+}
+
+.col #rest-of-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    margin: 0 0 0 70px;
+    padding-bottom: 0;
+}
+
+.col #rest-of-header h1 {
+    margin-bottom: 10px;
+}
+
+.col #rest-of-header a{
+    margin: 0 0 5px 25px;
+}
+
+.col #rest-of-header p {
+    margin: 0;
+}
+
+.col button{
+    margin: 0;
+    padding: 0;
+}
+
+.col button {
+    margin-top: 30px;
+}
+
+.col .input-container {
+    margin-left: 70px;
+}
+
+.input-container {
+    width:40%;
+}
+input{
+    border: 3px thin;
+    color: rgb(83, 83, 83);
+    border-radius: 5px;
+    }
+    input::placeholder{
+        color: #9e9e9e;
+        font-size: 18px;
+    }
+    input:focus{
+        outline: none;
+    }
+h1{
+    margin-right: 30px;
+    color: rgb(255, 255, 255);   
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+#image{
+   position: relative;
+   width: 150px;
+   height: 75px;
+}
+
+#search{
+    font-size: 18px;
+    padding: 5px;
+    width: 100%;
+}
+#main_container{
+    margin-top: 120px;
+    
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cover {
+    color: white;
+    margin: 0;
+}
+
+#modal {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100px;
+    background-color: #ffffff;
+    z-index: 100;
+    text-align:center;
+    overflow-y: auto;
+}
+
+#modal img {
+    margin-top: 100px;
+}
+
+
+.poster {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 7px;
+    background-color: rgb(43, 41, 41);
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px rgb(255, 255, 255);
+}
+
+.poster h4 {
+   margin-top: 10px;
+   padding: 7px;
+}
+
+.poster img {
+    cursor: pointer;
+    border-radius: 5px;
+    border: thin solid whitesmoke;
+    width: 280px;
+    height: 280px;
+}
+
+.poster:hover{
+    transform: scale(1.1);
+    transition: 700ms;
+    box-shadow: 0 0 15px  rgb(189, 189, 189);
+    background-color: rgb(124, 124, 124);
+}
+
+.no-results{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    margin: 50px;
+}
+#footer{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    z-index: 1;
+    border-top: 1px solid white; 
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    background-color:lightslategray;
+    text-align: center;
+}
+
+#currentPage{
+    color: rgb(255, 255, 255);
+    display: none;
+    margin-right: 10%;
+}
+
+#divSelect
+{
+    display: none;
+}
+
+#selectPage{
+    width: 70px;
+    margin: 10px;
+}
+
+label{
+    color: rgb(255, 255, 255);
+}
+
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    margin: 10px; 
+}
+
+.sidebar {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 7px;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px rgb(255, 255, 255);
+    background-color: rgb(162, 212, 212);
+    background-image: linear-gradient(to right, white , rgb(162, 212, 212));
+    overflow-x: hidden; /* onemogućen horizontalni scroll */
+    transition: 500ms;
+  }
+
+  .sidebar h2{
+    color: black;
+    padding: 5px;
+  }
+  
+  .sidebar h3 {
+    color: black;
+    margin-left: 15px;
+    padding: 5px;
+    text-align: left;
+  }
+
+  .sidebar h4 {
+    color: black;
+    padding: 5px;
+  }
+
+  .sidebar li{
+    color: black;
+    padding: 3px;
+    margin-left: 20px;
+    text-align: left;
+    margin-right: 15px;
+  }
+
+  .sidebar li:hover{
+    cursor: pointer;
+    background-color: rgb(88, 155, 255);
+    border-radius: 7px;
+    margin-right: 15px;   
+}
+  .sidebar p{
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+  }
+
+  .sidebar button:hover{
+    background-color: rgb(179, 19, 19);
+    border: rgb(179, 19, 19);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+/* css za div koji se pojavljuje klikom na sliku omota od nekog albuma */
+
+.loading {
+    display: none;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+    padding: 7px;
+    background-color: #ddd5d5;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px rgb(255, 255, 255);
+}
+
+.loading img {
+    margin-top: 150px;
+    height: 100px;
+    width: auto;
+}
+
+
+button.close {
+    margin-left: 85%;
+    width: 27px;
+    height: 27px;
+    font-size: 17px;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px rgb(25, 119, 173) solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+  /* css za YouTube odnosno iframe plejer */
+.youtube {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    background-color: rgb(0, 0, 0, 0.9); /*0.9 u zagradi daje opacity samo ovom elementu a ne njegovim child elementima*/
+    width: 100%;
+    height: 100%;
+    color: black;
+    overflow-x: hidden;
+
+}
+
+.newyoutube {
+    margin: 0;
+    top: 100px;
+    position: relative;
+}
+
+
+iframe {
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+}
+
+.closeYT {
+    cursor: pointer;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 50%;
+}
+  .youtube button:hover{
+    background-color: red;
+    border: rgb(0, 80, 155);
+    color: rgb(255, 255, 255);
+  }
+
+  @media screen and (orientation: portrait) {
+    body{
+        background: url(./images/portrait-background.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    .input-container {
+        width:60%;
+        }
+  }
