@@ -398,10 +398,13 @@ iframe {
      width:60%;
         }
     body{
-    background: url(./images/light.jpg); 
+    background: url(./images/mobilejpg.jpg); 
     background-size: cover;
         }
     .col .input-container{
        width: 40%;
         }
+     #header .col button {
+        margin-right: 15px;
+     }
 }
