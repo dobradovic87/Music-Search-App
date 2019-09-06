@@ -390,7 +390,7 @@ function onSearchResponse(data) {
     var newYouTubeDiv = document.createElement('div');
     newYouTubeDiv.setAttribute('class', 'newyoutube');
 
-    if (data.hasOwnProperty('error') || data.items[0].id.videoId === undefined) {
+    if (data.hasOwnProperty('error') || data.items.length ===0) {
         output = `
             <button onclick="closeVideo()" class="closeYT">×</button>
             <h3>Video can't be loaded because Daily Limit Exceeded<br> or there is some other issue with YouTube API</h3>
