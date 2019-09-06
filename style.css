@@ -404,9 +404,10 @@ iframe {
     .col .input-container{
        width: 40%;
         }
-    .col button {
-        margin-right: 20px;
-     }
+    #header.col button {
+        margin: 5px;
+        width: 10%;
+    } 
      .col #rest-of-header{
      margin-left: 120px;
     }  
