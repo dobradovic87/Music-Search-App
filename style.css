@@ -399,9 +399,9 @@ iframe {
         }
     body{
     background: url(./images/music-background-notes-footage-074528521_prevstill.jpeg); 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+        }
+    .col .input-container{
+       width: 40%;
+        }
 }
-  }
