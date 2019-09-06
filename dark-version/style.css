@@ -438,9 +438,6 @@ iframe {
   @media screen and (orientation: portrait) {
     body{
         background: url(./images/portrait-background.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
         background-size: cover;
         }
     .input-container {
