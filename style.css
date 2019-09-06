@@ -407,4 +407,7 @@ iframe {
      #header .col button {
         margin-right: 15px;
      }
+     .col #rest-of-header{
+     margin-left: 120px;
+    }  
 }
