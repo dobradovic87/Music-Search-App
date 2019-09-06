@@ -443,6 +443,7 @@ iframe {
     .input-container {
         width:60%;
         }
-     .col input {
+     .col .input-container {
          width: 40%;
+      }
   }
